@@ -40,7 +40,6 @@
 0.0.0.0 firebase-settings.crashlytics.com
 
 # === VK (Mail.ru Group) Ads & Telemetry Blocklist ===
-# MyTarget — рекламная платформа VK/Mail.ru
 0.0.0.0 mytarget.ru
 0.0.0.0 target.my.com
 0.0.0.0 ads.my.com
