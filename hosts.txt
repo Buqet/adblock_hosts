@@ -64,3 +64,26 @@
 0.0.0.0 tracking.my.com
 0.0.0.0 analytics.my.com
 0.0.0.0 appmetrica.mail.ru
+
+# === Max Messenger Full Blocklist ===
+0.0.0.0 max.ru
+0.0.0.0 www.max.ru
+0.0.0.0 web.max.ru
+0.0.0.0 m.max.ru
+0.0.0.0 app.max.ru
+0.0.0.0 platform-api.max.ru
+0.0.0.0 api.max.ru
+0.0.0.0 dev.max.ru
+0.0.0.0 maxmessengerapi.ru
+0.0.0.0 media.max.ru
+0.0.0.0 files.max.ru
+0.0.0.0 cdn.max.ru
+0.0.0.0 static.max.ru
+0.0.0.0 metrics.max.ru
+0.0.0.0 analytics.max.ru
+0.0.0.0 tracker.max.ru
+0.0.0.0 telemetry.max.ru
+0.0.0.0 push.max.ru
+0.0.0.0 notify.max.ru
+0.0.0.0 config.max.ru
+0.0.0.0 update.max.ru
