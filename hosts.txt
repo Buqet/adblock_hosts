@@ -38,3 +38,30 @@
 0.0.0.0 app-measurement.com
 0.0.0.0 settings.crashlytics.com
 0.0.0.0 firebase-settings.crashlytics.com
+
+# === VK (Mail.ru Group) Ads & Telemetry Blocklist ===
+# MyTarget — рекламная платформа VK/Mail.ru
+0.0.0.0 mytarget.ru
+0.0.0.0 target.my.com
+0.0.0.0 ads.my.com
+0.0.0.0 mads.my.com
+0.0.0.0 ads.vk.com
+0.0.0.0 advertising.vk.com
+0.0.0.0 vkad.tech
+0.0.0.0 vkads.ru
+0.0.0.0 ads.vk.ru
+0.0.0.0 ad.mail.ru
+0.0.0.0 mads.mail.ru
+0.0.0.0 top.mail.ru
+0.0.0.0 metrika.mail.ru
+0.0.0.0 stat.mail.ru
+0.0.0.0 cs.mail.ru
+0.0.0.0 r.mail.ru
+0.0.0.0 e.mail.ru
+0.0.0.0 tracker.mail.ru
+0.0.0.0 ads.ok.ru
+0.0.0.0 advertising.ok.ru
+0.0.0.0 tracker.my.com
+0.0.0.0 tracking.my.com
+0.0.0.0 analytics.my.com
+0.0.0.0 appmetrica.mail.ru
