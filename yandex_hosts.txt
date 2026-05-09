@@ -1,0 +1,14 @@
+0.0.0.0 an.yandex.ru
+0.0.0.0 mc.yandex.ru
+0.0.0.0 mc.yandex.com
+0.0.0.0 yandexadexchange.net
+0.0.0.0 adfox.yandex.ru
+0.0.0.0 adfox.ru
+0.0.0.0 ads.yandex.ru
+0.0.0.0 yabs.yandex.ru
+0.0.0.0 clck.yandex.ru
+0.0.0.0 appmetrica.yandex.ru
+0.0.0.0 report.appmetrica.yandex.ru
+0.0.0.0 redirect.appmetrica.yandex.ru
+0.0.0.0 metrica.yandex.ru
+0.0.0.0 analytics.yandex.ru
