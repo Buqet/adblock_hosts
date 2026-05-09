@@ -1,24 +1,24 @@
-0.0.0.0 mytarget.ru
-0.0.0.0 target.my.com
-0.0.0.0 ads.my.com
-0.0.0.0 mads.my.com
-0.0.0.0 ads.vk.com
-0.0.0.0 advertising.vk.com
-0.0.0.0 vkad.tech
-0.0.0.0 vkads.ru
-0.0.0.0 ads.vk.ru
-0.0.0.0 ad.mail.ru
-0.0.0.0 mads.mail.ru
-0.0.0.0 top.mail.ru
-0.0.0.0 metrika.mail.ru
-0.0.0.0 stat.mail.ru
-0.0.0.0 cs.mail.ru
-0.0.0.0 r.mail.ru
-0.0.0.0 e.mail.ru
-0.0.0.0 tracker.mail.ru
-0.0.0.0 ads.ok.ru
-0.0.0.0 advertising.ok.ru
-0.0.0.0 tracker.my.com
-0.0.0.0 tracking.my.com
-0.0.0.0 analytics.my.com
-0.0.0.0 appmetrica.mail.ru
+mytarget.ru
+target.my.com
+ads.my.com
+mads.my.com
+ads.vk.com
+advertising.vk.com
+vkad.tech
+vkads.ru
+ads.vk.ru
+ad.mail.ru
+mads.mail.ru
+top.mail.ru
+metrika.mail.ru
+stat.mail.ru
+cs.mail.ru
+r.mail.ru
+e.mail.ru
+tracker.mail.ru
+ads.ok.ru
+advertising.ok.ru
+tracker.my.com
+tracking.my.com
+analytics.my.com
+appmetrica.mail.ru
