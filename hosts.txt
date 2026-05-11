@@ -1,15 +1,18 @@
-# -----------------------------------------------------------
-# Список доменов телеметрии и слежки
-# Сгенерирован на основе открытых источников
-# Дата: 2026-05-10
-# -----------------------------------------------------------
+# ============================================================
+# Универсальный файл блокировки телеметрии и слежки
+# Дата: 2026-05-11
+# ============================================================
 
-# --- AppGallery (Huawei) ---
-# Источник: privacy-drcn.dbankcdn.cn
+# Все домены взяты из предыдущего списка (AppGallery, Chrome,
+# Discord, Telegram, Google-сервисы, Proton, Spotify, Suno, TikTok).
+# Закомментированные строки в оригинале я пропустил.
+
+# ============================================================
+# 1. ФОРМАТ ДЛЯ uBlock Origin / AdGuard / Adblock Plus
+# Синтаксис: ||domain.com^
+# (блокирует домен и все поддомены)
+# ============================================================
 ||privacy-drcn.dbankcdn.cn^
-
-# --- Google Chrome ---
-# Источник: общие домены телеметрии Google
 ||clients2.google.com^
 ||clients3.google.com^
 ||clients4.google.com^
@@ -18,67 +21,17 @@
 ||update.googleapis.com^
 ||chromemanagement.googleapis.com^
 ||safebrowsing.googleapis.com^
-
-# --- Discord ---
-# Источник: packetcat, hagezi/dns-blocklists, deepwiki
 ||dc-telemetry.net^
 ||science.discord.com^
-
-# --- FaceUI ---
-# Для этого сервиса не найдено специфичных доменов телеметрии.
-
-# --- Telegram ---
-# Источник: hagezi/dns-blocklists, deepwiki
 ||tganalytics.xyz^
 ||tganalytics.com^
-||api.telegram.org^
-
-# --- Gmail ---
-# Используются общие домены Google (см. секцию Google в конце файла)
-
-# --- Google Files ---
-# Используются общие домены Google (см. секцию Google в конце файла)
-
-# --- Google Play ---
-# Источник: support.zebra.com, blog.csdn.net, discuss.grapheneos.org
 ||play.googleapis.com^
 ||android.clients.google.com^
 ||gvt2.com^
 ||gvt3.com^
 ||connectivitycheck.gstatic.com^
 ||mtalk.google.com^
-
-# --- Google Service Framework (GSF) ---
-# Источник: appsetter.ru, общие домены Google
 ||gsf-revalidation.gstatic.com^
-
-# --- Google Play Игры ---
-# Используются общие домены Google (см. секцию Google в конце файла)
-
-# --- HTML Creator ---
-# Для этого сервиса не найдено специфичных доменов телеметрии.
-
-# --- Google Meet ---
-# Используются общие домены Google (см. секцию Google в конце файла)
-
-# --- Proton Authenticator ---
-# Согласно заявлениям разработчика (Proton), приложение не содержит телеметрии.
-# Источник: proton.me, devproblems.com
-
-# --- Proton Calendar ---
-# Используются общие домены Proton (см. секцию Proton в конце файла)
-
-# --- Proton Drive ---
-# Используются общие домены Proton (см. секцию Proton в конце файла)
-
-# --- Proton Mail ---
-# Используются общие домены Proton (см. секцию Proton в конце файла)
-
-# --- Proton Pass ---
-# Используются общие домены Proton (см. секцию Proton в конце файла)
-
-# --- Spotify ---
-# Источник: hagezi/dns-blocklists, MarshMeadow/Block-Spotify-ADS-DNS-List, privacyauditor.institute
 ||aet.spotify.com^
 ||api-partner.spotify.com^
 ||pixel-static.spotify.com^
@@ -90,16 +43,9 @@
 ||adeventtracker.spotify.com^
 ||metrics.spotify.com^
 ||log.spotify.com^
-
-# --- Suno (suno.ai) ---
-# Отчет Exodus (com.suno.android) выявил 4 трекера: crash reporting, profiling analytics, analytics.
-# Рекомендуется блокировать известные домены аналитики.
 ||suno.ai^
 ||api.suno.ai^
 ||app.suno.ai^
-
-# --- TikTok ---
-# Источник: StevenBlack/hosts, M4jx/TikTokBlockList, blocklistproject.github.io
 ||tiktok.com^
 ||tiktokcdn.com^
 ||tiktokv.com^
@@ -123,16 +69,6 @@
 ||tiktokv.us^
 ||tiktokv.tv^
 ||tiktokv.ru^
-||tiktok.org^
-||tiktok.biz^
-||tiktok.us^
-||tiktok.net^
-||tiktok.co^
-||tiktok.tv^
-||tiktok.ru^
-
-# --- Общие домены телеметрии Google ---
-# Источник: nickspaargaren/no-google, blog.csdn.net, поддержка Zebra
 ||google-analytics.com^
 ||googletagmanager.com^
 ||googletagservices.com^
@@ -150,12 +86,349 @@
 ||firebaseio.com^
 ||firebase.googleapis.com^
 ||crashlytics.com^
-
-# --- Общие домены телеметрии Proton ---
-# Источник: proton.me, reports.exodus-privacy.eu.org
 ||proton.me^
 ||protonmail.com^
 ||protonvpn.com^
 ||protonstatus.com^
 ||protonapi.com^
 ||protonapps.com^
+
+# ============================================================
+# 2. ФОРМАТ ДЛЯ СИСТЕМНОГО ФАЙЛА /etc/hosts (0.0.0.0)
+# Синтаксис: 0.0.0.0 domain.com
+# ============================================================
+0.0.0.0 privacy-drcn.dbankcdn.cn
+0.0.0.0 clients2.google.com
+0.0.0.0 clients3.google.com
+0.0.0.0 clients4.google.com
+0.0.0.0 clients5.google.com
+0.0.0.0 clients6.google.com
+0.0.0.0 update.googleapis.com
+0.0.0.0 chromemanagement.googleapis.com
+0.0.0.0 safebrowsing.googleapis.com
+0.0.0.0 dc-telemetry.net
+0.0.0.0 science.discord.com
+0.0.0.0 tganalytics.xyz
+0.0.0.0 tganalytics.com
+0.0.0.0 play.googleapis.com
+0.0.0.0 android.clients.google.com
+0.0.0.0 gvt2.com
+0.0.0.0 gvt3.com
+0.0.0.0 connectivitycheck.gstatic.com
+0.0.0.0 mtalk.google.com
+0.0.0.0 gsf-revalidation.gstatic.com
+0.0.0.0 aet.spotify.com
+0.0.0.0 api-partner.spotify.com
+0.0.0.0 pixel-static.spotify.com
+0.0.0.0 pixel.spotify.com
+0.0.0.0 ads.spotify.com
+0.0.0.0 audio-ads.spotify.com
+0.0.0.0 heads-ec.spotify.com
+0.0.0.0 ads-fa.spotify.com
+0.0.0.0 adeventtracker.spotify.com
+0.0.0.0 metrics.spotify.com
+0.0.0.0 log.spotify.com
+0.0.0.0 suno.ai
+0.0.0.0 api.suno.ai
+0.0.0.0 app.suno.ai
+0.0.0.0 tiktok.com
+0.0.0.0 tiktokcdn.com
+0.0.0.0 tiktokv.com
+0.0.0.0 tiktok.org
+0.0.0.0 tiktok.biz
+0.0.0.0 tiktok.us
+0.0.0.0 tiktok.net
+0.0.0.0 tiktok.co
+0.0.0.0 tiktok.tv
+0.0.0.0 tiktok.ru
+0.0.0.0 tiktokcdn.org
+0.0.0.0 tiktokcdn.net
+0.0.0.0 tiktokcdn.co
+0.0.0.0 tiktokcdn.biz
+0.0.0.0 tiktokcdn.us
+0.0.0.0 tiktokcdn.tv
+0.0.0.0 tiktokcdn.ru
+0.0.0.0 tiktokv.net
+0.0.0.0 tiktokv.co
+0.0.0.0 tiktokv.biz
+0.0.0.0 tiktokv.us
+0.0.0.0 tiktokv.tv
+0.0.0.0 tiktokv.ru
+0.0.0.0 google-analytics.com
+0.0.0.0 googletagmanager.com
+0.0.0.0 googletagservices.com
+0.0.0.0 googleadservices.com
+0.0.0.0 googlesyndication.com
+0.0.0.0 doubleclick.net
+0.0.0.0 2mdn.net
+0.0.0.0 googleapis.com
+0.0.0.0 pa.googleapis.com
+0.0.0.0 googleusercontent.com
+0.0.0.0 gstatic.com
+0.0.0.0 google.com
+0.0.0.0 googlevideo.com
+0.0.0.0 ytimg.com
+0.0.0.0 firebaseio.com
+0.0.0.0 firebase.googleapis.com
+0.0.0.0 crashlytics.com
+0.0.0.0 proton.me
+0.0.0.0 protonmail.com
+0.0.0.0 protonvpn.com
+0.0.0.0 protonstatus.com
+0.0.0.0 protonapi.com
+0.0.0.0 protonapps.com
+
+# ============================================================
+# 3. ФОРМАТ ДЛЯ СИСТЕМНОГО ФАЙЛА /etc/hosts (127.0.0.1)
+# Синтаксис: 127.0.0.1 domain.com
+# ============================================================
+127.0.0.1 privacy-drcn.dbankcdn.cn
+127.0.0.1 clients2.google.com
+127.0.0.1 clients3.google.com
+127.0.0.1 clients4.google.com
+127.0.0.1 clients5.google.com
+127.0.0.1 clients6.google.com
+127.0.0.1 update.googleapis.com
+127.0.0.1 chromemanagement.googleapis.com
+127.0.0.1 safebrowsing.googleapis.com
+127.0.0.1 dc-telemetry.net
+127.0.0.1 science.discord.com
+127.0.0.1 tganalytics.xyz
+127.0.0.1 tganalytics.com
+127.0.0.1 play.googleapis.com
+127.0.0.1 android.clients.google.com
+127.0.0.1 gvt2.com
+127.0.0.1 gvt3.com
+127.0.0.1 connectivitycheck.gstatic.com
+127.0.0.1 mtalk.google.com
+127.0.0.1 gsf-revalidation.gstatic.com
+127.0.0.1 aet.spotify.com
+127.0.0.1 api-partner.spotify.com
+127.0.0.1 pixel-static.spotify.com
+127.0.0.1 pixel.spotify.com
+127.0.0.1 ads.spotify.com
+127.0.0.1 audio-ads.spotify.com
+127.0.0.1 heads-ec.spotify.com
+127.0.0.1 ads-fa.spotify.com
+127.0.0.1 adeventtracker.spotify.com
+127.0.0.1 metrics.spotify.com
+127.0.0.1 log.spotify.com
+127.0.0.1 suno.ai
+127.0.0.1 api.suno.ai
+127.0.0.1 app.suno.ai
+127.0.0.1 tiktok.com
+127.0.0.1 tiktokcdn.com
+127.0.0.1 tiktokv.com
+127.0.0.1 tiktok.org
+127.0.0.1 tiktok.biz
+127.0.0.1 tiktok.us
+127.0.0.1 tiktok.net
+127.0.0.1 tiktok.co
+127.0.0.1 tiktok.tv
+127.0.0.1 tiktok.ru
+127.0.0.1 tiktokcdn.org
+127.0.0.1 tiktokcdn.net
+127.0.0.1 tiktokcdn.co
+127.0.0.1 tiktokcdn.biz
+127.0.0.1 tiktokcdn.us
+127.0.0.1 tiktokcdn.tv
+127.0.0.1 tiktokcdn.ru
+127.0.0.1 tiktokv.net
+127.0.0.1 tiktokv.co
+127.0.0.1 tiktokv.biz
+127.0.0.1 tiktokv.us
+127.0.0.1 tiktokv.tv
+127.0.0.1 tiktokv.ru
+127.0.0.1 google-analytics.com
+127.0.0.1 googletagmanager.com
+127.0.0.1 googletagservices.com
+127.0.0.1 googleadservices.com
+127.0.0.1 googlesyndication.com
+127.0.0.1 doubleclick.net
+127.0.0.1 2mdn.net
+127.0.0.1 googleapis.com
+127.0.0.1 pa.googleapis.com
+127.0.0.1 googleusercontent.com
+127.0.0.1 gstatic.com
+127.0.0.1 google.com
+127.0.0.1 googlevideo.com
+127.0.0.1 ytimg.com
+127.0.0.1 firebaseio.com
+127.0.0.1 firebase.googleapis.com
+127.0.0.1 crashlytics.com
+127.0.0.1 proton.me
+127.0.0.1 protonmail.com
+127.0.0.1 protonvpn.com
+127.0.0.1 protonstatus.com
+127.0.0.1 protonapi.com
+127.0.0.1 protonapps.com
+
+# ============================================================
+# 4. ФОРМАТ DNSMASQ
+# Синтаксис: address=/domain.com/0.0.0.0
+# ============================================================
+address=/privacy-drcn.dbankcdn.cn/0.0.0.0
+address=/clients2.google.com/0.0.0.0
+address=/clients3.google.com/0.0.0.0
+address=/clients4.google.com/0.0.0.0
+address=/clients5.google.com/0.0.0.0
+address=/clients6.google.com/0.0.0.0
+address=/update.googleapis.com/0.0.0.0
+address=/chromemanagement.googleapis.com/0.0.0.0
+address=/safebrowsing.googleapis.com/0.0.0.0
+address=/dc-telemetry.net/0.0.0.0
+address=/science.discord.com/0.0.0.0
+address=/tganalytics.xyz/0.0.0.0
+address=/tganalytics.com/0.0.0.0
+address=/play.googleapis.com/0.0.0.0
+address=/android.clients.google.com/0.0.0.0
+address=/gvt2.com/0.0.0.0
+address=/gvt3.com/0.0.0.0
+address=/connectivitycheck.gstatic.com/0.0.0.0
+address=/mtalk.google.com/0.0.0.0
+address=/gsf-revalidation.gstatic.com/0.0.0.0
+address=/aet.spotify.com/0.0.0.0
+address=/api-partner.spotify.com/0.0.0.0
+address=/pixel-static.spotify.com/0.0.0.0
+address=/pixel.spotify.com/0.0.0.0
+address=/ads.spotify.com/0.0.0.0
+address=/audio-ads.spotify.com/0.0.0.0
+address=/heads-ec.spotify.com/0.0.0.0
+address=/ads-fa.spotify.com/0.0.0.0
+address=/adeventtracker.spotify.com/0.0.0.0
+address=/metrics.spotify.com/0.0.0.0
+address=/log.spotify.com/0.0.0.0
+address=/suno.ai/0.0.0.0
+address=/api.suno.ai/0.0.0.0
+address=/app.suno.ai/0.0.0.0
+address=/tiktok.com/0.0.0.0
+address=/tiktokcdn.com/0.0.0.0
+address=/tiktokv.com/0.0.0.0
+address=/tiktok.org/0.0.0.0
+address=/tiktok.biz/0.0.0.0
+address=/tiktok.us/0.0.0.0
+address=/tiktok.net/0.0.0.0
+address=/tiktok.co/0.0.0.0
+address=/tiktok.tv/0.0.0.0
+address=/tiktok.ru/0.0.0.0
+address=/tiktokcdn.org/0.0.0.0
+address=/tiktokcdn.net/0.0.0.0
+address=/tiktokcdn.co/0.0.0.0
+address=/tiktokcdn.biz/0.0.0.0
+address=/tiktokcdn.us/0.0.0.0
+address=/tiktokcdn.tv/0.0.0.0
+address=/tiktokcdn.ru/0.0.0.0
+address=/tiktokv.net/0.0.0.0
+address=/tiktokv.co/0.0.0.0
+address=/tiktokv.biz/0.0.0.0
+address=/tiktokv.us/0.0.0.0
+address=/tiktokv.tv/0.0.0.0
+address=/tiktokv.ru/0.0.0.0
+address=/google-analytics.com/0.0.0.0
+address=/googletagmanager.com/0.0.0.0
+address=/googletagservices.com/0.0.0.0
+address=/googleadservices.com/0.0.0.0
+address=/googlesyndication.com/0.0.0.0
+address=/doubleclick.net/0.0.0.0
+address=/2mdn.net/0.0.0.0
+address=/googleapis.com/0.0.0.0
+address=/pa.googleapis.com/0.0.0.0
+address=/googleusercontent.com/0.0.0.0
+address=/gstatic.com/0.0.0.0
+address=/google.com/0.0.0.0
+address=/googlevideo.com/0.0.0.0
+address=/ytimg.com/0.0.0.0
+address=/firebaseio.com/0.0.0.0
+address=/firebase.googleapis.com/0.0.0.0
+address=/crashlytics.com/0.0.0.0
+address=/proton.me/0.0.0.0
+address=/protonmail.com/0.0.0.0
+address=/protonvpn.com/0.0.0.0
+address=/protonstatus.com/0.0.0.0
+address=/protonapi.com/0.0.0.0
+address=/protonapps.com/0.0.0.0
+
+# ============================================================
+# 5. ПРОСТОЙ СПИСОК ДОМЕНОВ
+# (одна строка – один домен)
+# ============================================================
+privacy-drcn.dbankcdn.cn
+clients2.google.com
+clients3.google.com
+clients4.google.com
+clients5.google.com
+clients6.google.com
+update.googleapis.com
+chromemanagement.googleapis.com
+safebrowsing.googleapis.com
+dc-telemetry.net
+science.discord.com
+tganalytics.xyz
+tganalytics.com
+play.googleapis.com
+android.clients.google.com
+gvt2.com
+gvt3.com
+connectivitycheck.gstatic.com
+mtalk.google.com
+gsf-revalidation.gstatic.com
+aet.spotify.com
+api-partner.spotify.com
+pixel-static.spotify.com
+pixel.spotify.com
+ads.spotify.com
+audio-ads.spotify.com
+heads-ec.spotify.com
+ads-fa.spotify.com
+adeventtracker.spotify.com
+metrics.spotify.com
+log.spotify.com
+suno.ai
+api.suno.ai
+app.suno.ai
+tiktok.com
+tiktokcdn.com
+tiktokv.com
+tiktok.org
+tiktok.biz
+tiktok.us
+tiktok.net
+tiktok.co
+tiktok.tv
+tiktok.ru
+tiktokcdn.org
+tiktokcdn.net
+tiktokcdn.co
+tiktokcdn.biz
+tiktokcdn.us
+tiktokcdn.tv
+tiktokcdn.ru
+tiktokv.net
+tiktokv.co
+tiktokv.biz
+tiktokv.us
+tiktokv.tv
+tiktokv.ru
+google-analytics.com
+googletagmanager.com
+googletagservices.com
+googleadservices.com
+googlesyndication.com
+doubleclick.net
+2mdn.net
+googleapis.com
+pa.googleapis.com
+googleusercontent.com
+gstatic.com
+google.com
+googlevideo.com
+ytimg.com
+firebaseio.com
+firebase.googleapis.com
+crashlytics.com
+proton.me
+protonmail.com
+protonvpn.com
+protonstatus.com
+protonapi.com
+protonapps.com
