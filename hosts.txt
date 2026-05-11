@@ -1,89 +1,161 @@
-# === Yandex Ads & Telemetry Blocklist ===
-0.0.0.0 an.yandex.ru
-0.0.0.0 mc.yandex.ru
-0.0.0.0 mc.yandex.com
-0.0.0.0 yandexadexchange.net
-0.0.0.0 adfox.yandex.ru
-0.0.0.0 adfox.ru
-0.0.0.0 ads.yandex.ru
-0.0.0.0 yabs.yandex.ru
-0.0.0.0 clck.yandex.ru
-0.0.0.0 appmetrica.yandex.ru
-0.0.0.0 report.appmetrica.yandex.ru
-0.0.0.0 redirect.appmetrica.yandex.ru
-0.0.0.0 metrica.yandex.ru
-0.0.0.0 analytics.yandex.ru
+# -----------------------------------------------------------
+# Список доменов телеметрии и слежки
+# Сгенерирован на основе открытых источников
+# Дата: 2026-05-10
+# -----------------------------------------------------------
 
-# === Google Ads & Telemetry Blocklist ===
-0.0.0.0 adservice.google.com
-0.0.0.0 adservice.google.ru
-0.0.0.0 googleads.g.doubleclick.net
-0.0.0.0 pagead2.googlesyndication.com
-0.0.0.0 tpc.googlesyndication.com
-0.0.0.0 googleadservices.com
-0.0.0.0 www.googleadservices.com
-0.0.0.0 ad.doubleclick.net
-0.0.0.0 adclick.g.doubleclick.net
-0.0.0.0 cm.g.doubleclick.net
-0.0.0.0 stats.g.doubleclick.net
-0.0.0.0 pubads.g.doubleclick.net
-0.0.0.0 googletagmanager.com
-0.0.0.0 www.googletagmanager.com
-0.0.0.0 googletagservices.com
-0.0.0.0 www.googletagservices.com
-0.0.0.0 google-analytics.com
-0.0.0.0 www.google-analytics.com
-0.0.0.0 ssl.google-analytics.com
-0.0.0.0 analytics.google.com
-0.0.0.0 app-measurement.com
-0.0.0.0 settings.crashlytics.com
-0.0.0.0 firebase-settings.crashlytics.com
+# --- AppGallery (Huawei) ---
+# Источник: privacy-drcn.dbankcdn.cn
+||privacy-drcn.dbankcdn.cn^
 
-# === VK (Mail.ru Group) Ads & Telemetry Blocklist ===
-0.0.0.0 mytarget.ru
-0.0.0.0 target.my.com
-0.0.0.0 ads.my.com
-0.0.0.0 mads.my.com
-0.0.0.0 ads.vk.com
-0.0.0.0 advertising.vk.com
-0.0.0.0 vkad.tech
-0.0.0.0 vkads.ru
-0.0.0.0 ads.vk.ru
-0.0.0.0 ad.mail.ru
-0.0.0.0 mads.mail.ru
-0.0.0.0 top.mail.ru
-0.0.0.0 metrika.mail.ru
-0.0.0.0 stat.mail.ru
-0.0.0.0 cs.mail.ru
-0.0.0.0 r.mail.ru
-0.0.0.0 e.mail.ru
-0.0.0.0 tracker.mail.ru
-0.0.0.0 ads.ok.ru
-0.0.0.0 advertising.ok.ru
-0.0.0.0 tracker.my.com
-0.0.0.0 tracking.my.com
-0.0.0.0 analytics.my.com
-0.0.0.0 appmetrica.mail.ru
+# --- Google Chrome ---
+# Источник: общие домены телеметрии Google
+||clients2.google.com^
+||clients3.google.com^
+||clients4.google.com^
+||clients5.google.com^
+||clients6.google.com^
+||update.googleapis.com^
+||chromemanagement.googleapis.com^
+||safebrowsing.googleapis.com^
 
-# === Max Messenger Full Blocklist ===
-0.0.0.0 max.ru
-0.0.0.0 www.max.ru
-0.0.0.0 web.max.ru
-0.0.0.0 m.max.ru
-0.0.0.0 app.max.ru
-0.0.0.0 platform-api.max.ru
-0.0.0.0 api.max.ru
-0.0.0.0 dev.max.ru
-0.0.0.0 maxmessengerapi.ru
-0.0.0.0 media.max.ru
-0.0.0.0 files.max.ru
-0.0.0.0 cdn.max.ru
-0.0.0.0 static.max.ru
-0.0.0.0 metrics.max.ru
-0.0.0.0 analytics.max.ru
-0.0.0.0 tracker.max.ru
-0.0.0.0 telemetry.max.ru
-0.0.0.0 push.max.ru
-0.0.0.0 notify.max.ru
-0.0.0.0 config.max.ru
-0.0.0.0 update.max.ru
+# --- Discord ---
+# Источник: packetcat, hagezi/dns-blocklists, deepwiki
+||dc-telemetry.net^
+||science.discord.com^
+
+# --- FaceUI ---
+# Для этого сервиса не найдено специфичных доменов телеметрии.
+
+# --- Telegram ---
+# Источник: hagezi/dns-blocklists, deepwiki
+||tganalytics.xyz^
+||tganalytics.com^
+||api.telegram.org^
+
+# --- Gmail ---
+# Используются общие домены Google (см. секцию Google в конце файла)
+
+# --- Google Files ---
+# Используются общие домены Google (см. секцию Google в конце файла)
+
+# --- Google Play ---
+# Источник: support.zebra.com, blog.csdn.net, discuss.grapheneos.org
+||play.googleapis.com^
+||android.clients.google.com^
+||gvt2.com^
+||gvt3.com^
+||connectivitycheck.gstatic.com^
+||mtalk.google.com^
+
+# --- Google Service Framework (GSF) ---
+# Источник: appsetter.ru, общие домены Google
+||gsf-revalidation.gstatic.com^
+
+# --- Google Play Игры ---
+# Используются общие домены Google (см. секцию Google в конце файла)
+
+# --- HTML Creator ---
+# Для этого сервиса не найдено специфичных доменов телеметрии.
+
+# --- Google Meet ---
+# Используются общие домены Google (см. секцию Google в конце файла)
+
+# --- Proton Authenticator ---
+# Согласно заявлениям разработчика (Proton), приложение не содержит телеметрии.
+# Источник: proton.me, devproblems.com
+
+# --- Proton Calendar ---
+# Используются общие домены Proton (см. секцию Proton в конце файла)
+
+# --- Proton Drive ---
+# Используются общие домены Proton (см. секцию Proton в конце файла)
+
+# --- Proton Mail ---
+# Используются общие домены Proton (см. секцию Proton в конце файла)
+
+# --- Proton Pass ---
+# Используются общие домены Proton (см. секцию Proton в конце файла)
+
+# --- Spotify ---
+# Источник: hagezi/dns-blocklists, MarshMeadow/Block-Spotify-ADS-DNS-List, privacyauditor.institute
+||aet.spotify.com^
+||api-partner.spotify.com^
+||pixel-static.spotify.com^
+||pixel.spotify.com^
+||ads.spotify.com^
+||audio-ads.spotify.com^
+||heads-ec.spotify.com^
+||ads-fa.spotify.com^
+||adeventtracker.spotify.com^
+||metrics.spotify.com^
+||log.spotify.com^
+
+# --- Suno (suno.ai) ---
+# Отчет Exodus (com.suno.android) выявил 4 трекера: crash reporting, profiling analytics, analytics.
+# Рекомендуется блокировать известные домены аналитики.
+||suno.ai^
+||api.suno.ai^
+||app.suno.ai^
+
+# --- TikTok ---
+# Источник: StevenBlack/hosts, M4jx/TikTokBlockList, blocklistproject.github.io
+||tiktok.com^
+||tiktokcdn.com^
+||tiktokv.com^
+||tiktok.org^
+||tiktok.biz^
+||tiktok.us^
+||tiktok.net^
+||tiktok.co^
+||tiktok.tv^
+||tiktok.ru^
+||tiktokcdn.org^
+||tiktokcdn.net^
+||tiktokcdn.co^
+||tiktokcdn.biz^
+||tiktokcdn.us^
+||tiktokcdn.tv^
+||tiktokcdn.ru^
+||tiktokv.net^
+||tiktokv.co^
+||tiktokv.biz^
+||tiktokv.us^
+||tiktokv.tv^
+||tiktokv.ru^
+||tiktok.org^
+||tiktok.biz^
+||tiktok.us^
+||tiktok.net^
+||tiktok.co^
+||tiktok.tv^
+||tiktok.ru^
+
+# --- Общие домены телеметрии Google ---
+# Источник: nickspaargaren/no-google, blog.csdn.net, поддержка Zebra
+||google-analytics.com^
+||googletagmanager.com^
+||googletagservices.com^
+||googleadservices.com^
+||googlesyndication.com^
+||doubleclick.net^
+||2mdn.net^
+||googleapis.com^
+||pa.googleapis.com^
+||googleusercontent.com^
+||gstatic.com^
+||google.com^
+||googlevideo.com^
+||ytimg.com^
+||firebaseio.com^
+||firebase.googleapis.com^
+||crashlytics.com^
+
+# --- Общие домены телеметрии Proton ---
+# Источник: proton.me, reports.exodus-privacy.eu.org
+||proton.me^
+||protonmail.com^
+||protonvpn.com^
+||protonstatus.com^
+||protonapi.com^
+||protonapps.com^
