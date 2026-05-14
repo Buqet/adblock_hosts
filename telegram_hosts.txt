@@ -1,6 +1,0 @@
-promote.telegram.org
-ads.telegram.org
-ads-api.telegram.org
-telemetry.telegram.org
-stats.telegram.org
-log.telegram.org
