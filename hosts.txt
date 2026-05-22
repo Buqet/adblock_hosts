@@ -1301,3 +1301,5 @@ zasc-vcode-od.vivoglobal.com
 zasc-vcode-or.vivoglobal.com
 h4g3z1-native.vivo.web.app
 vhs.wwstat.com
+jupiter.intl.sys.miui.com
+chromesyncentities-pa.googleapis.com
